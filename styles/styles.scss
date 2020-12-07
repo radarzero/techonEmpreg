@@ -1,0 +1,43 @@
+html {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #526f75;
+}
+@mixin D_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar {
+  background: #e3f2fd !important;
+
+  .navbar-brand {
+    img {
+      width: 15%;
+      height: 15%;
+    }
+  }
+}
+.regForm {
+  .jumbotron {
+    color: #7a634f;
+    background-color: #61dbf5;
+    margin-top: 5rem;
+    button {
+      margin-left: 75%;
+    }
+  }
+}
+
+.content {
+  @include D_flex();
+}
